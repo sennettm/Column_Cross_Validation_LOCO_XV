@@ -54,8 +54,7 @@ pip install biopython
 
 ## Output
 
-siteloglik.txt; a file containing the individual site Ln-likelihoods  
-totloglik.txt; a file containing the total predictive Ln-likelihood 
+siteloglik.txt; a file containing the individual site Ln-likelihoods 
 IQTree_Data; a folder containing all the cross-validation alignments, iqtree outputs, etc...
 
 ## Running
