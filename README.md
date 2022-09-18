@@ -1,5 +1,5 @@
 # Leave-One-Column-Out Cross-Validation (LOCO_XV)
-
+**still in beta** 
 ## Overview
 
 **What is LOCO_XV?**
