@@ -22,12 +22,18 @@ Again, we don't know that this is true, but we needn't worry about this when it 
 
 **How does LOCO_XV work?**
 
+![LOCO_fig](https://user-images.githubusercontent.com/111892527/207721000-73189d85-21b6-4118-b8ea-748b9f072a2b.svg)
+
 A single column is removed from an alignment. Model parameters and a phylogenetic tree are inferred for that column. The model parameters and tree are used to 
 calculate the Ln-likelihood of that removed column. The process is repeated for each column in the alignment.
 
 **What can we do with LOCO_XV?**
 
 We can calculate the predictive Ln-likelihood for different models and determine which is most predictive. 
+
+![LOCO_results](https://user-images.githubusercontent.com/111892527/207720942-4d301439-058e-4fd9-8f33-ef30e675665d.svg)
+
+According to the column-wise cross-validation calculation, LG+FO+G12 model is more predictive than the LG+FO+G12+I and GTR20+FO+G12 model. Adding a proportion of invariant sites or fitting the substitution matrix result in an overparameterized less-predictive model. Therefore, the LG+FO+G12 model should be used. This is in contrast to the AIC, which would result in us selecting the GTR20+FO+G12 model of evolution.
 
 ## Implementing
 
